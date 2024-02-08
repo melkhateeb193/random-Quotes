@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: "Outfit", sans-serif;
+    --primiary-One: #6466E9;
+    --primiary-two: #111729;
+    --primiary-three: #20293A;
+    --primiary-four: #4A5567;
+    --primiary-five: #97A3B6;
+
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primiary-two);
+    min-height: 100vh;
+}
+
+main {
+background-color: var(--primiary-three);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 3rem;
+max-width: 700px;
+border-radius: 20px;
+}
+#AutherName{
+    color: white;
+}
+.phargraph{
+    border: 1px solid var(--primiary-One);
+    color: var(--primiary-One);
+    border-radius: 20px;
+    padding: 0.6rem;
+    font-size: 14px;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  .cursor {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 1.2em;
+    width: 0.1em;
+    background-color: var(--primiary-five);
+    animation: blink 0.7s infinite alternate;
+  }
+
+  @keyframes blink {
+    to { opacity: 0; }
+  }
+
+  #content {
+    color: var(--primiary-five);
+    text-align: center;
+    white-space: noraml;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #content::after {
+    content: '|';
+    position: absolute;
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 1.2em;
+    width: 0.1em;
+    background-color: var(--primiary-five);
+    animation: blink 0.3s infinite alternate;
+  }
+
+footer{
+    margin-top: 10px;
+
+}
+
+.button-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  #shareBtn{
+    border: none;
+    background-color: var(--primiary-two);
+    border: 1px solid var(--primiary-four);
+    border-radius: 10px 0 0 10px ;
+    width: 60px; 
+    height: 50px;
+    opacity: 0.5;
+ }
+  #linkBtn{
+    border: none;
+    background-color: var(--primiary-two);
+    border: 1px solid var(--primiary-four);
+    border-radius: 0 10px 10px 0 ;
+    width: 60px; 
+    height: 50px;
+    opacity: 0.5;
+
+  }
+  #shareBtn:focus ,#linkBtn:focus{
+    outline: none;  
+    opacity: 1;
+}
