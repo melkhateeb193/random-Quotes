@@ -111,3 +111,10 @@ footer{
     outline: none;  
     opacity: 1;
 }
+#textCopied{
+  background-color: var(--primiary-One);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top : 10px;
+}
